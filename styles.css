@@ -216,11 +216,15 @@ p {
 .brand {
   display: flex;
   align-items: center;
-
-  min-width: 0;
   gap: 0.8rem;
+  min-width: 0;
+
+  transition: opacity 180ms ease;
 }
 
+.brand:hover {
+  opacity: 0.82;
+}
 .brand img {
   width: 48px;
   height: 48px;
