@@ -5,7 +5,7 @@
       <img
         src="{{ '/assets/logo-mark.png' | relative_url }}"
         alt="TreeTop logo mark"
-      />
+      >
 
       <div class="brand-text">
         <span class="brand-title">TreeTop Villa</span>
@@ -14,21 +14,51 @@
     </a>
 
     <nav class="nav-links" aria-label="Main">
-      <a href="{{ '/stay.html' | relative_url }}">Stay</a>
-      <a href="{{ '/gallery.html' | relative_url }}">Gallery</a>
-      <a href="{{ '/area.html' | relative_url }}">Area</a>
-      <a href="{{ '/reviews.html' | relative_url }}">Reviews</a>
-      <a href="{{ '/faq.html' | relative_url }}">FAQ</a>
-      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+
+      <a
+        href="{{ '/stay.html' | relative_url }}"
+        class="{% if page.nav == 'stay' %}active{% endif %}">
+        Stay
+      </a>
+
+      <a
+        href="{{ '/gallery.html' | relative_url }}"
+        class="{% if page.nav == 'gallery' %}active{% endif %}">
+        Gallery
+      </a>
+
+      <a
+        href="{{ '/area.html' | relative_url }}"
+        class="{% if page.nav == 'area' %}active{% endif %}">
+        Area
+      </a>
+
+      <a
+        href="{{ '/reviews.html' | relative_url }}"
+        class="{% if page.nav == 'reviews' %}active{% endif %}">
+        Reviews
+      </a>
+
+      <a
+        href="{{ '/faq.html' | relative_url }}"
+        class="{% if page.nav == 'faq' %}active{% endif %}">
+        FAQ
+      </a>
+
+      <a
+        href="{{ '/contact.html' | relative_url }}"
+        class="{% if page.nav == 'contact' %}active{% endif %}">
+        Contact
+      </a>
 
       <a
         class="btn btn-primary"
         href="https://www.explorehuatulco.com/Escapia/Details/2104-279857"
         target="_blank"
-        rel="noopener"
-      >
+        rel="noopener">
         Book Now
       </a>
+
     </nav>
 
   </div>
