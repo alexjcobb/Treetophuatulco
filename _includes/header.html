@@ -1,1 +1,35 @@
-<!-- Shared header will go here -->
+<header class="site-header">
+  <div class="container nav">
+
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img
+        src="{{ '/assets/logo-mark.png' | relative_url }}"
+        alt="TreeTop logo mark"
+      />
+
+      <div class="brand-text">
+        <span class="brand-title">TreeTop Villa</span>
+        <span class="brand-sub">Tangolunda Bay, Huatulco</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Main">
+      <a href="{{ '/stay.html' | relative_url }}">Stay</a>
+      <a href="{{ '/gallery.html' | relative_url }}">Gallery</a>
+      <a href="{{ '/area.html' | relative_url }}">Area</a>
+      <a href="{{ '/reviews.html' | relative_url }}">Reviews</a>
+      <a href="{{ '/faq.html' | relative_url }}">FAQ</a>
+      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+
+      <a
+        class="btn btn-primary"
+        href="https://www.explorehuatulco.com/Escapia/Details/2104-279857"
+        target="_blank"
+        rel="noopener"
+      >
+        Book Now
+      </a>
+    </nav>
+
+  </div>
+</header>
