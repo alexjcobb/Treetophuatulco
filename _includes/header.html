@@ -1,10 +1,14 @@
 <header class="site-header">
   <div class="container nav">
 
-    <a class="brand" href="{{ '/' | relative_url }}">
+    <a
+      class="brand"
+      href="{{ '/' | relative_url }}"
+      aria-label="TreeTop Villa home page"
+    >
       <img
         src="{{ '/assets/logo-mark.png' | relative_url }}"
-        alt="TreeTop logo mark"
+        alt="TreeTop Villa logo"
       >
 
       <div class="brand-text">
@@ -13,7 +17,13 @@
       </div>
     </a>
 
-    <nav class="nav-links" aria-label="Main">
+    <nav class="nav-links" aria-label="Primary Navigation">
+
+      <a
+        href="{{ '/' | relative_url }}"
+        class="{% if page.nav == 'home' %}active{% endif %}">
+        Home
+      </a>
 
       <a
         href="{{ '/stay.html' | relative_url }}"
@@ -55,7 +65,8 @@
         class="btn btn-primary"
         href="https://www.explorehuatulco.com/Escapia/Details/2104-279857"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         Book Now
       </a>
 
