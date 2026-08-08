@@ -56,6 +56,56 @@
     rel="stylesheet"
     href="{{ '/styles.css' | relative_url }}"
   >
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VacationRental",
+  "name": "TreeTop Villa Huatulco",
+  "description": "{{ page.description | default: 'Oceanfront villa above Tangolunda Bay in Huatulco, Oaxaca.' | escape }}",
+  "url": "{{ page.url | absolute_url }}",
+  "image": "{{ '/assets/hero.jpg' | absolute_url }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Huatulco",
+    "addressRegion": "Oaxaca",
+    "addressCountry": "MX"
+  },
+  "numberOfBedrooms": 4,
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Private saltwater pool",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Private gym",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Cold plunge",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Beach access",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Paddleboards",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Whole-home filtered water",
+      "value": true
+    }
+  ]
+}
+</script>
+  
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ76105WBQ"></script>
