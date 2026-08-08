@@ -1134,6 +1134,9 @@ summary:focus-visible {
     border-radius: 22px;
   }
 
+  .nav-toggle {
+  display: none;
+}
   .btn-row {
     gap: 0.7rem;
   }
