@@ -33,19 +33,30 @@ if (navToggle && navLinks) {
     });
   });
 }
+
 // GA4 booking-link tracking
-document.querySelectorAll(
-  'a[href*="explorehuatulco.com/Escapia/Details/2104-279857"]'
-).forEach(function(link) {
-  link.addEventListener("click", function() {
-    if (typeof gtag === "function") {
-      gtag("event", "booking_click", {
-        link_url: this.href,
-        link_text: this.textContent.trim()
-        debug_mode: true
-      });
-    }
+document.addEventListener("click", function (event) {
+  const link = event.target.closest(
+    'a[href*="explorehuatulco.com/Escapia/Details/2104-279857"]'
+  );
+
+  if (!link) return;
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.dataLayer.push({
+    event: "booking_click",
+    link_url: link.href,
+    link_text: link.textContent.trim()
   });
+
+  if (typeof gtag === "function") {
+    gtag("event", "booking_click", {
+      link_url: link.href,
+      link_text: link.textContent.trim(),
+      debug_mode: true
+    });
+  }
 });
 
 // GA4 email-link tracking
