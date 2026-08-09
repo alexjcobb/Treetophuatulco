@@ -1,0 +1,37 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>{{ '/' | absolute_url }}</loc>
+  </url>
+
+  <url>
+    <loc>{{ '/stay.html' | absolute_url }}</loc>
+  </url>
+
+  <url>
+    <loc>{{ '/gallery.html' | absolute_url }}</loc>
+  </url>
+
+  <url>
+    <loc>{{ '/area.html' | absolute_url }}</loc>
+  </url>
+
+  <url>
+    <loc>{{ '/reviews.html' | absolute_url }}</loc>
+  </url>
+
+  <url>
+    <loc>{{ '/faq.html' | absolute_url }}</loc>
+  </url>
+
+  <url>
+    <loc>{{ '/contact.html' | absolute_url }}</loc>
+  </url>
+
+</urlset>
