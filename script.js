@@ -42,6 +42,7 @@ document.querySelectorAll(
       gtag("event", "booking_click", {
         link_url: this.href,
         link_text: this.textContent.trim()
+        debug_mode: true
       });
     }
   });
