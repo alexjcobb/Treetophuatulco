@@ -56,56 +56,95 @@
     rel="stylesheet"
     href="{{ '/styles.css' | relative_url }}"
   >
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VacationRental",
+  "additionalType": "Villa",
   "name": "TreeTop Villa Huatulco",
+  "identifier": "treetop-villa-huatulco-001",
   "description": "{{ page.description | default: 'Oceanfront villa above Tangolunda Bay in Huatulco, Oaxaca.' | escape }}",
   "url": "{{ page.url | absolute_url }}",
-  "image": "{{ '/assets/hero.jpg' | absolute_url }}",
+
+  "latitude": 15.770440,
+  "longitude": -96.101277,
+
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Huatulco",
     "addressRegion": "Oaxaca",
     "addressCountry": "MX"
   },
-  "numberOfBedrooms": 4,
-  "amenityFeature": [
-    {
-      "@type": "LocationFeatureSpecification",
-      "name": "Private saltwater pool",
-      "value": true
+
+  "image": [
+    "{{ '/assets/hero.jpg' | absolute_url }}",
+    "{{ '/assets/living-room.jpg' | absolute_url }}",
+    "{{ '/assets/primary-bedroom.jpg' | absolute_url }}",
+    "{{ '/assets/bedroom-2.jpg' | absolute_url }}",
+    "{{ '/assets/bedroom-3.jpg' | absolute_url }}",
+    "{{ '/assets/bathroom-1.jpg' | absolute_url }}",
+    "{{ '/assets/bathroom-2.jpg' | absolute_url }}",
+    "{{ '/assets/treetop-deck.jpg' | absolute_url }}",
+    "{{ '/assets/rooftop-lounge.jpg' | absolute_url }}",
+    "{{ '/assets/gym.jpg' | absolute_url }}"
+  ],
+
+  "containsPlace": {
+    "@type": "Accommodation",
+    "additionalType": "EntirePlace",
+
+    "occupancy": {
+      "@type": "QuantitativeValue",
+      "value": 8
     },
-    {
-      "@type": "LocationFeatureSpecification",
-      "name": "Private gym",
-      "value": true
-    },
-    {
-      "@type": "LocationFeatureSpecification",
-      "name": "Cold plunge",
-      "value": true
-    },
-    {
-      "@type": "LocationFeatureSpecification",
-      "name": "Beach access",
-      "value": true
-    },
-    {
-      "@type": "LocationFeatureSpecification",
-      "name": "Paddleboards",
-      "value": true
-    },
-    {
-      "@type": "LocationFeatureSpecification",
-      "name": "Whole-home filtered water",
-      "value": true
-    }
-  ]
+
+    "numberOfBedrooms": 4,
+
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "pool",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "poolType",
+        "value": "Outdoor"
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "gymFitnessEquipment",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "beachAccess",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "kitchen",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "outdoorGrill",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "patio",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "tv",
+        "value": true
+      }
+    ]
+  }
 }
-</script>
-  
+</script>  
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ76105WBQ"></script>
