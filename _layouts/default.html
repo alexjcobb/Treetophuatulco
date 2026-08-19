@@ -72,6 +72,14 @@
     "addressCountry": "MX"
   },
 
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5.0,
+    "ratingCount": 7,
+    "reviewCount": 7,
+    "bestRating": 5
+  },
+
   "image": [
     "{{ '/assets/hero.jpg' | absolute_url }}",
     "{{ '/assets/living-room.jpg' | absolute_url }}",
@@ -95,6 +103,20 @@
     },
 
     "numberOfBedrooms": 4,
+    "numberOfBathroomsTotal": 3.5,
+
+    "bed": [
+      {
+        "@type": "BedDetails",
+        "numberOfBeds": 3,
+        "typeOfBed": "King"
+      },
+      {
+        "@type": "BedDetails",
+        "numberOfBeds": 2,
+        "typeOfBed": "Single"
+      }
+    ],
 
     "amenityFeature": [
       {
@@ -140,7 +162,7 @@
     ]
   }
 }
-</script>  
+</script>
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ76105WBQ"></script>
